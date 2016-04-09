@@ -1,0 +1,8 @@
+ELiquidLab.MainActivity, ELiquidLab;md5097859d8069f9db74b41382a969c3728.MainActivity
+ELiquidLab.MainActivity, ELiquidLab, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5097859d8069f9db74b41382a969c3728.MainActivity
+ELiquidLab.MainActivity;md5097859d8069f9db74b41382a969c3728.MainActivity
+eliquidlab.MainActivity;md5097859d8069f9db74b41382a969c3728.MainActivity
+ELiquidLab.RecipeDetailActivity, ELiquidLab;md5097859d8069f9db74b41382a969c3728.RecipeDetailActivity
+ELiquidLab.RecipeDetailActivity, ELiquidLab, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5097859d8069f9db74b41382a969c3728.RecipeDetailActivity
+ELiquidLab.RecipeDetailActivity;md5097859d8069f9db74b41382a969c3728.RecipeDetailActivity
+eliquidlab.RecipeDetailActivity;md5097859d8069f9db74b41382a969c3728.RecipeDetailActivity
