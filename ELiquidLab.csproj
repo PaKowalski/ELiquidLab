@@ -60,6 +60,10 @@
   <ItemGroup>
     <Compile Include="AboutActivity.cs" />
     <Compile Include="Adapters\RecipeListAdapter.cs" />
+    <Compile Include="Fragments\BaseFragment.cs" />
+    <Compile Include="Fragments\CerealsFragment.cs" />
+    <Compile Include="Fragments\DessertsFragment.cs" />
+    <Compile Include="Fragments\FavoriteRecipeFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MenuActivity.cs" />
     <Compile Include="RecipeDetailActivity.cs" />
@@ -85,6 +89,15 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AboutView.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FavoriteRecipeFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\DessertsFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CerealsFragment.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

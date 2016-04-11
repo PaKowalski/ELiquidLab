@@ -12,6 +12,7 @@ using Android.Widget;
 using ELiquidLab.Adapters;
 using ELiquidLab.Core.Model;
 using ELiquidLab.Core.Service;
+using ELiquidLab.Fragments;
 
 namespace ELiquidLab
 {
@@ -27,6 +28,9 @@ namespace ELiquidLab
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.RecipeMenuView);
 
+            ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
+            /*
+
             recipeListView = FindViewById<ListView>(Resource.Id.recipeListView);
             recipeDataService = new RecipeDataService();
             allRecipes = recipeDataService.GetAllRecipes();
@@ -35,6 +39,32 @@ namespace ELiquidLab
             recipeListView.FastScrollEnabled = true;
 
             recipeListView.ItemClick += RecipeListView_ItemClick;
+            */
+            AddTab("Favorites", new FavoriteRecipeFragment());
+            AddTab("Desserts", new DessertsFragment());
+            AddTab("Cereals", new CerealsFragment());
+
+        }
+
+        private void AddTab(string tabText, Fragment view)
+        {
+            var tab = this.ActionBar.NewTab();
+            tab.SetText(tabText);
+
+            tab.TabSelected += delegate(object sender, ActionBar.TabEventArgs e)
+            {
+                var fragment = this.FragmentManager.FindFragmentById(Resource.Id.fragmentContainer);
+                if (fragment != null)
+                    e.FragmentTransaction.Remove(fragment);
+                e.FragmentTransaction.Add(Resource.Id.fragmentContainer, view);
+            };
+
+            tab.TabUnselected += delegate(object sender, ActionBar.TabEventArgs e)
+            {
+                e.FragmentTransaction.Remove(view);
+            };
+
+            this.ActionBar.AddTab(tab);
         }
 
         private void RecipeListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -54,11 +84,11 @@ namespace ELiquidLab
 
             if (resultCode == Result.Ok && requestCode == 100)
             {
-                var selectedRecipe = recipeDataService.GetRecipeById(data.GetIntExtra("selectedRecipe", 1));
+                var selectedRecipe = recipeDataService.GetRecipeById(data.GetIntExtra("selectedRecipeId", 0));
 
                 var dialog = new AlertDialog.Builder(this);
                 dialog.SetTitle("Confirmation");
-                dialog.SetMessage("Building Recipe");
+                dialog.SetMessage(string.Format("You've added {0} time(s) the {1}", data.GetIntExtra("amount", 0), selectedRecipe.Name));
                 dialog.Show();
             }
         }

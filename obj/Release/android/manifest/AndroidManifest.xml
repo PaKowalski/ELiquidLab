@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ELiquidLab.ELiquidLab" android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ELiquidLab.ELiquidLab" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
-  <application android:label="ELiquidLab" android:name="mono.android.app.Application" android:allowBackup="true" android:icon="@drawable/icon">
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="ELiquidLab" android:name="mono.android.app.Application" android:allowBackup="true">
+    <activity android:label="About E-Liquid Lab" android:name="md5097859d8069f9db74b41382a969c3728.AboutActivity" />
     <activity android:icon="@drawable/icon" android:label="ELiquidLab" android:name="md5097859d8069f9db74b41382a969c3728.MainActivity" />
-    <activity android:label="Recipe Detail" android:name="md5097859d8069f9db74b41382a969c3728.RecipeDetailActivity">
+    <activity android:label="MenuActivity" android:name="md5097859d8069f9db74b41382a969c3728.MenuActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="Recipe Detail" android:name="md5097859d8069f9db74b41382a969c3728.RecipeDetailActivity" />
+    <activity android:label="RecipeMenuActivity" android:name="md5097859d8069f9db74b41382a969c3728.RecipeMenuActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="ELiquidLab.ELiquidLab.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
 </manifest>

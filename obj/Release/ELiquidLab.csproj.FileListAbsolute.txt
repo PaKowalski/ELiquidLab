@@ -14,6 +14,14 @@ c:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\ob
 c:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\drawable\icon.png
 c:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\R.cs.flag
 c:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\uploadflags.txt
-C:\Users\Kowalski\documents\visual studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Release\ELiquidLab.Core.dll.mdb
-C:\Users\Kowalski\documents\visual studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\ELiquidLab.dll.mdb
-C:\Users\Kowalski\documents\visual studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Release\ELiquidLab.dll.mdb
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\layout\recipemenuview.xml
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\layout\reciperowview.xml
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\layout\mainmenu.xml
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\layout\aboutview.xml
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\drawable\elllogo.png
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Release\ELiquidLab.Core.dll.mdb
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\layout\favoriterecipefragment.xml
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\layout\dessertsfragment.xml
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\res\layout\cerealsfragment.xml
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Release\ELiquidLab.dll.mdb
+C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Release\ELiquidLab.dll.mdb
