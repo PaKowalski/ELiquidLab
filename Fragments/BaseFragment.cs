@@ -17,7 +17,7 @@ namespace ELiquidLab.Fragments
 {
     public class BaseFragment : Fragment
     {
-        protected ListView listView2;
+        protected ListView listView;
         protected RecipeDataService recipeDataService;
         protected List<Recipe> recipes;
 
@@ -28,11 +28,11 @@ namespace ELiquidLab.Fragments
 
         protected void HandleEvents()
         {
-            listView2.ItemClick += ListView_ItemClick;
+            listView.ItemClick += ListView_ItemClick;
         }
         protected void FindViews()
         {
-            listView2 = this.View.FindViewById<ListView>(Resource.Id.recipeListView);
+            listView = this.View.FindViewById<ListView>(Resource.Id.recipeListView);
         }
 
         protected void ListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)

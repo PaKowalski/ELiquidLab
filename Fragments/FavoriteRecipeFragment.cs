@@ -32,7 +32,7 @@ namespace ELiquidLab.Fragments
             HandleEvents();
 
             recipes = recipeDataService.GetFavoriteRecipes();
-            listView2.Adapter = new RecipeListAdapter(this.Activity, recipes);
+            listView.Adapter = new RecipeListAdapter(this.Activity, recipes);
 
         }
 
