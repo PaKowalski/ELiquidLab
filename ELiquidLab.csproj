@@ -59,6 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutActivity.cs" />
+    <Compile Include="Adapters\IngredientsAdapter.cs" />
+    <Compile Include="TakePictureActivity.cs" />
     <Compile Include="Adapters\RecipeListAdapter.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Fragments\CerealsFragment.cs" />
@@ -98,6 +100,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CerealsFragment.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TakePictureView.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

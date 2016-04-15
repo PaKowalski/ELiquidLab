@@ -22,6 +22,7 @@ C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\ob
 C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Debug\res\layout\favoriterecipefragment.xml
 C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Debug\res\layout\dessertsfragment.xml
 C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Debug\res\layout\cerealsfragment.xml
-C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Debug\ELiquidLab.Core.dll.mdb
-C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Debug\ELiquidLab.dll.mdb
-C:\Users\Kowalski\Documents\Visual Studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Debug\ELiquidLab.dll.mdb
+C:\Users\Kowalski\documents\visual studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Debug\res\layout\takepictureview.xml
+C:\Users\Kowalski\documents\visual studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Debug\ELiquidLab.Core.dll.mdb
+C:\Users\Kowalski\documents\visual studio 2015\Projects\ELiquidLab\ELiquidLab\obj\Debug\ELiquidLab.dll.mdb
+C:\Users\Kowalski\documents\visual studio 2015\Projects\ELiquidLab\ELiquidLab\bin\Debug\ELiquidLab.dll.mdb

@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using ELiquidLab.Adapters;
 using ELiquidLab.Core.Model;
 using ELiquidLab.Core.Service;
 using ELiquidLab.Utility;
@@ -27,6 +28,9 @@ namespace ELiquidLab
         private Recipe selectedRecipe;
         private RecipeDataService dataservice;
 
+        private Dictionary<string, double> ingredientsDictionary; 
+        private ListView ingredientsListView;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,6 +40,10 @@ namespace ELiquidLab
 
             var selectedRecipeId = Intent.Extras.GetInt("selectedRecipeId");
             selectedRecipe = dataService.GetRecipeById(selectedRecipeId);
+            ingredientsDictionary = dataService.GetRecipeById(selectedRecipeId).Ingredients; 
+
+            ingredientsListView = FindViewById<ListView>(Resource.Id.ingredientsListView);
+            ingredientsListView.Adapter = new IngredientsAdapter(this, ingredientsDictionary);
 
             FindViews();
             BindData();
@@ -59,6 +67,10 @@ namespace ELiquidLab
 
             var imageBitmap = ImageHelper.GetImageBitmapFromUrl("http://imgur.com/iLKGjqg" + ".jpg");
             recipeImageView.SetImageBitmap(imageBitmap);
+
+            var ingredients = selectedRecipe.Ingredients;
+
+            //ingredientsListView.Adapter
         }
 
         private void HandleEvents()

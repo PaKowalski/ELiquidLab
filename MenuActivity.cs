@@ -41,6 +41,7 @@ namespace ELiquidLab
         {
             viewRecipesButton.Click += ViewRecipesButton_Click;
             aboutButton.Click += AboutButton_Click;
+            takePictureButton.Click += TakePictureButton_Click;
         }
 
         private void ViewRecipesButton_Click(object sender, EventArgs e)
@@ -52,6 +53,12 @@ namespace ELiquidLab
         private void AboutButton_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(AboutActivity));
+            StartActivity(intent);
+        }
+
+        private void TakePictureButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(TakePictureActivity));
             StartActivity(intent);
         }
     }

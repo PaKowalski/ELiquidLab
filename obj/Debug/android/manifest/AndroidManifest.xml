@@ -6,6 +6,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="ELiquidLab" android:name="mono.android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="About E-Liquid Lab" android:name="md5097859d8069f9db74b41382a969c3728.AboutActivity" />
+    <activity android:label="Take A Picture of your recipe" android:name="md5097859d8069f9db74b41382a969c3728.TakePictureActivity" />
     <activity android:icon="@drawable/icon" android:label="ELiquidLab" android:name="md5097859d8069f9db74b41382a969c3728.MainActivity" />
     <activity android:label="MenuActivity" android:name="md5097859d8069f9db74b41382a969c3728.MenuActivity">
       <intent-filter>

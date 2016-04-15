@@ -40,9 +40,9 @@ namespace ELiquidLab
 
             recipeListView.ItemClick += RecipeListView_ItemClick;
             */
-            AddTab("Favorites", new FavoriteRecipeFragment());
+            //AddTab("Favorites", new FavoriteRecipeFragment());
             AddTab("Desserts", new DessertsFragment());
-            AddTab("Cereals", new CerealsFragment());
+            //AddTab("Cereals", new CerealsFragment());
 
         }
 
