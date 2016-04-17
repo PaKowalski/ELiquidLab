@@ -58,7 +58,7 @@ namespace ELiquidLab
 
                 var dialog = new AlertDialog.Builder(this);
                 dialog.SetTitle("Confirmation");
-                dialog.SetMessage("Building Recipe");
+                dialog.SetMessage("Building Recipe: "+selectedRecipe.Name);
                 dialog.Show();
             }
         }

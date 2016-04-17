@@ -25,7 +25,8 @@ namespace ELiquidLab
         private Button createButton;
 
         private Recipe selectedRecipe;
-        private RecipeDataService dataservice;
+        //private RecipeDataService dataservice;
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
